@@ -66,7 +66,6 @@ public class EngineImpl implements Engine {
     }
 
     private String addWorker(String[] data) {
-        //TODO
         String type = data[0];
         String workerName = data[1];
 
@@ -74,7 +73,6 @@ public class EngineImpl implements Engine {
     }
 
     private String addVehicle(String[] data) {
-        //TODO
         String vehicleName = data[0];
         int strengthRequired = Integer.parseInt(data[1]);
 
@@ -82,7 +80,6 @@ public class EngineImpl implements Engine {
     }
 
     private String addToolToWorker(String[] data) {
-        //TODO
         String workerName = data[0];
         int power = Integer.parseInt(data[1]);
 
@@ -90,13 +87,10 @@ public class EngineImpl implements Engine {
     }
 
     private String statistics() {
-        //TODO
-
         return controller.statistics();
     }
 
     private String makingVehicle(String[] data) {
-        //TODO
         String vehicleName = data[0];
 
         return controller.makingVehicle(vehicleName);

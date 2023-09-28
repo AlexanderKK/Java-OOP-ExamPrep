@@ -13,7 +13,7 @@ public class EngineImpl implements Engine {
     private BufferedReader reader;
 
     public EngineImpl() {
-        this.controller = new ControllerImpl(); //TODO implement first
+        this.controller = new ControllerImpl();
         this.reader = new BufferedReader(new InputStreamReader(System.in));
     }
 
@@ -73,21 +73,18 @@ public class EngineImpl implements Engine {
     }
 
     private String addService(String[] data) {
-        // TODO
         String type = data[0];
         String name = data[1];
 
         return controller.addService(type, name);
     }
     private String addSupplement(String[] data) {
-        // TODO
         String type = data[0];
 
         return controller.addSupplement(type);
     }
 
     private String supplementForService(String[] data) {
-        // TODO
         String serviceName = data[0];
         String supplementType = data[1];
 
@@ -95,7 +92,6 @@ public class EngineImpl implements Engine {
     }
 
     private String addRobot(String[] data) {
-        // TODO
         String serviceName = data[0];
         String robotType = data[1];
         String robotName = data[2];
@@ -106,14 +102,12 @@ public class EngineImpl implements Engine {
     }
 
     private String feedingRobot(String[] data) {
-        // TODO
         String serviceName = data[0];
 
         return controller.feedingRobot(serviceName);
     }
 
     private String sumOfAll(String[] data) {
-        // TODO
         String serviceName = data[0];
 
         return controller.sumOfAll(serviceName);

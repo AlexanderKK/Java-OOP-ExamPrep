@@ -11,8 +11,6 @@ import java.util.Optional;
 import static org.junit.Assert.*;
 
 public class ToyStoryTest {
-    //TODO: Write your tests here
-
     private ToyStore toyStore;
     private Toy toy;
 
